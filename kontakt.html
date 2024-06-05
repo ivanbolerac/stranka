@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Peter Kutka</title>
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="merch.html">Merch</a></li>
+          <li><a href="dabel.html">Červený Ďábel</a></li>
+          <li><a href="https://www.youtube.com/@peterkutkaofficial" target="_blank">Tvorba</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="cvrcek">
+    <div class="contact-container">
+        <h1>KUTKOVA ZOZNAMKA🐍</h1>
+        <p>Chcete si vybaviť rande s Petrom Kutkom tak napíšte</p>
+        <form action="#" method="post" class="contact-form">
+            <div class="form-control">
+                <input type="text" id="name" name="name" required oninput="handleInput(this)">
+                <label for="name" id="name-label">Vaše Meno</label>
+            </div>
+            <div class="form-control">
+                <input type="email" id="email" name="email" required oninput="handleInput(this)">
+                <label for="email" id="email-label">Váš Email</label>
+            </div>
+            <div class="form-control">
+                <textarea id="message" name="message" rows="4" required oninput="handleInput(this)"></textarea>
+                <label for="message" id="message-label">Vaša správa</label>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        </div>
+        <img src="cvrcek.jpg" style="width: 20%; order: 1;">
+        <img src="cvrcek.jpg" style="width: 20%; order: 3;">
+
+        </div>
+
+
+    <script>
+        function handleInput(input) {
+            const label = input.nextElementSibling;
+            if (input.value.trim() !== '') {
+                label.classList.add('active');
+            } else {
+                label.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+
+</html>

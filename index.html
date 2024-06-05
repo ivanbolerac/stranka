@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Kutka</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <video class="video-background" autoplay muted loop>
+        <source src="yttomp4 - 1b6e0168473cead.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="text-container" id="section1">
+        <p class="txt">PETER KUTKA</p>
+        <a href="#section2"><img class="img" src="down-arrow.png" style="width: 10vh;"></a>
+    </div>
+    <div id="section2">
+        <div class="text-container1">
+            <div class="menu">
+                <a href="merch.html"><img src="tshirt (1).png" style="width: 60%;"></a>
+                <h2>Merch</h2>
+            </div>
+            <div class="menu">
+                <a href="https://www.youtube.com/@peterkutkaofficial"><img src="youtube.png" style="width: 60%;"></a>
+                <h2>JúŤuB</h2>
+            </div>
+            <div class="menu">
+                <a href="dabel.html"><img src="mask (1).png" style="width: 60%;"></a>
+                <h2>Červený dábel</h2>
+            </div>
+            <div class="menu">
+                <a href="kontakt.html"><img src="telephone-call (1).png" style="width: 60%;"></a>
+                <h2>Kontakt</h2>
+            </div>
+        </div>
+    </div>
+    <div id="section3">
+        <div class="Kobra">
+            <h1 style="margin: 0;">O Kobre 🐍</h1>
+            <h4 style="margin: 0;">Volám sa Peter Kuťka, som narodený 1.1.1979. Mám stredoškolské vzdelanie a školu
+                života.<br>Väčšinu života som obľuboval ľahké ženy ale teraz hľadám pravú lásku a asi som ju aj našiel.<br>Mám
+                za sebou zápas v MMA, ktorý som vyhral v prvom kole.<br>Som úprimný a celý život hovorím pravdu<br>
+                mam 19cm 🍆.</h4>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById('scrollToSection2').addEventListener('click', function () {
+            document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Remove hash from URL without jumping to it
+        window.addEventListener('scroll', function () {
+            history.replaceState(null, null, ' ');
+        });
+    </script>
+</body>
+
+</html>
